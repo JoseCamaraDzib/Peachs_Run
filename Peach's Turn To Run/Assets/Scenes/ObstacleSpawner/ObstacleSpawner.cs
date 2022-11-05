@@ -18,13 +18,12 @@ public class ObstacleSpawner : MonoBehaviour
         minHeight = -3f;
         maxHeight = 0f;
         Instantiate(sphere, transform.position, Quaternion.identity);
-        sphere.GetComponent<Renderer>().enabled = true;
         //GameObject obstacles = Instantiate(sphere, transform.position, Quaternion.identity);
         // obstacles.transform.position += Vector3.right * Random.Range(minHeight, maxHeight);
     }
 
     // Update is called once per frame
-    void Update()   
+    void Update()
     {
         
     }
