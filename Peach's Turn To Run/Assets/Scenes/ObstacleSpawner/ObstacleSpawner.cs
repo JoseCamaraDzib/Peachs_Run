@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-public class ObstaclesSpawner: MonoBehaviour
+/*public class ObstaclesSpawner: MonoBehaviour
 {
     public GameObject cube;
     public float spawnRate;
@@ -20,10 +20,10 @@ public class ObstaclesSpawner: MonoBehaviour
     }
 
     // Update is called once per frame
-    /*void Update()
+    void Update()
     {
         
-    }*/
+    }
 }
 
     private void OnEnable()
@@ -41,7 +41,7 @@ public class ObstaclesSpawner: MonoBehaviour
     {
         GameObject obstacles = Instantiate(cube, transform.position, Quaternion.identity);
         obstacles.transform.position += Vector3.right * Random.Range(minHeight, maxHeight);
-    }*/
+    }
 
     }
-}
+}*/
