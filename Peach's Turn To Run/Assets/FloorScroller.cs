@@ -13,7 +13,7 @@ public class FloorScroller : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position += new Vector3(0, 0, -10 * Time.deltaTime);
+        transform.position += new Vector3(0, 0, 0);
 
         /*if (transform.position.y(#bottom-of-screen-coordinate))
         {
