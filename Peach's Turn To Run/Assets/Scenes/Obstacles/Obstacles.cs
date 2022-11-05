@@ -18,7 +18,7 @@ public class Obstacles : MonoBehaviour
     void Update()
     {
         //Move the obstacle a little bit each frame
-        transform.position += Vector3.down * speed * Time.deltaTime;
+        //transform.position += Vector3.down * speed * Time.deltaTime;
     }
 
     /*
