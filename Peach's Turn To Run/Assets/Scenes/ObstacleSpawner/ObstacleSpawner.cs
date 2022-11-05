@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-<<<<<<< Updated upstream
+
 /*public class Obstacles : MonoBehaviour
 =======
 public class ObstaclesSpawner: MonoBehaviour
@@ -27,11 +27,11 @@ public class ObstaclesSpawner: MonoBehaviour
     {
         
     }
-<<<<<<< Updated upstream
-}*/
-=======
 
-    private void OnEnable()
+}*/
+
+
+   /* private void OnEnable()
     {
         InvokeRepeating(nameof(Spawn), spawnRate, spawnRate);
     }
@@ -47,4 +47,4 @@ public class ObstaclesSpawner: MonoBehaviour
         obstacles.transform.position += Vector3.right * Random.Range(minHeight, maxHeight);
     }
 }
->>>>>>> Stashed changes
+   */
