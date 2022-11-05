@@ -4,9 +4,8 @@ using UnityEngine;
 
 
 /*public class Obstacles : MonoBehaviour
-=======
+
 public class ObstaclesSpawner: MonoBehaviour
->>>>>>> Stashed changes
 {
     public GameObject prefab;
     public float spawnRate;
@@ -27,11 +26,12 @@ public class ObstaclesSpawner: MonoBehaviour
     {
         
     }
+}
 
-}*/
 
 
-   /* private void OnEnable()
+
+   private void OnEnable()
     {
         InvokeRepeating(nameof(Spawn), spawnRate, spawnRate);
     }
@@ -45,6 +45,4 @@ public class ObstaclesSpawner: MonoBehaviour
     {
         GameObject obstacles = Instantiate(prefab, transform.position, Quaternion.identity);
         obstacles.transform.position += Vector3.right * Random.Range(minHeight, maxHeight);
-    }
-}
-   */
+    }*/
