@@ -17,7 +17,7 @@ public class Obstacles : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //Move the pillar a little bit each frame
+        //Move the obstacle a little bit each frame
         transform.position += Vector3.down * speed * Time.deltaTime;
     }
 
