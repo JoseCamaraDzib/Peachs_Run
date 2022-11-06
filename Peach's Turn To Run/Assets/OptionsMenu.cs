@@ -7,6 +7,6 @@ public class OptionsMenu : MonoBehaviour
 {
     public void BackToMain()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+        SceneManager.LoadScene(0);
     }
 }
