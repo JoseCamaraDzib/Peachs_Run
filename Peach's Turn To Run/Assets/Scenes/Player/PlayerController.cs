@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerController : MonoBehaviour
+public class PlayerController : MonoBehaviour //done by Miranda Ly
 {
     // Start is called before the first frame update
     private CharacterController controller;
@@ -10,7 +10,16 @@ public class PlayerController : MonoBehaviour
     public float forwardSpeed; //0 is left, 1 is middle, 2 is right
 
     private int desiredLane = 1;
+
+    [SerializeField]
     public float laneDistance = 6;
+
+    [SerializeField]
+    public float jumpForce;
+
+    [SerializeField]
+    public float Gravity;
+
     void Start()
     {
         controller = GetComponent<CharacterController>();
@@ -19,6 +28,13 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         direction.z = forwardSpeed;
+
+        direction.y += Gravity * Time.deltaTime;
+
+        if (Input.GetKeyDown(KeyCode.UpArrow))
+        {
+            Jump();
+        }
 
         if (Input.GetKeyDown(KeyCode.RightArrow))
         {
@@ -50,10 +66,16 @@ public class PlayerController : MonoBehaviour
         }
 
         transform.position = Vector3.Lerp(transform.position, targetPosition, 80 * Time.fixedDeltaTime);
+        //controller.Move(direction * Time.fixedDeltaTime);
     }
 
     private void FixedUpdate()
     {
         controller.Move(direction * Time.fixedDeltaTime);
+    }
+
+    private void Jump()
+    {
+        direction.y = jumpForce;
     }
 }

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-public class ObstacleSpawner : MonoBehaviour
+public class ObstacleSpawner : MonoBehaviour //coded by Miranda Ly
 {
     public GameObject sphere;
     public float spawnRate;
