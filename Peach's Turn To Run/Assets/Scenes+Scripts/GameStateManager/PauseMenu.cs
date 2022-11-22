@@ -9,6 +9,9 @@ public class PauseMenu : MonoBehaviour
 
     public GameObject pauseMenuUI;
 
+    [SerializeField]
+    private GameManager GM;
+
     // Update is called once per frame
     void Update()
     {
@@ -41,14 +44,14 @@ public class PauseMenu : MonoBehaviour
 
     public void Restart()
     {
-        SceneManager.LoadScene(2);
+        GM.PlayGame();
         Time.timeScale = 1f;
         GameIsPaused = false;
     }
 
     public void Menu()
     {
-        SceneManager.LoadScene(0);
+        GM.BackToMain();
         Time.timeScale = 1f;
         GameIsPaused = false;
     }
