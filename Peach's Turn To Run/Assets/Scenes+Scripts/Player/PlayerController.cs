@@ -8,6 +8,8 @@ public class PlayerController : MonoBehaviour //done by Miranda Ly
     private CharacterController controller;
     private Vector3 direction;
     public float forwardSpeed; //0 is left, 1 is middle, 2 is right
+    public Rigidbody rb;
+    public float speed = 5;
 
     private int desiredLane = 1;
 
@@ -16,6 +18,9 @@ public class PlayerController : MonoBehaviour //done by Miranda Ly
 
     [SerializeField]
     public float jumpForce;
+
+    [SerializeField]
+    LayerMask groundMask; 
 
     [SerializeField]
     public float Gravity;
@@ -30,6 +35,13 @@ public class PlayerController : MonoBehaviour //done by Miranda Ly
         direction.z = forwardSpeed;
 
         direction.y += Gravity * Time.deltaTime;
+        /*if (controller.isGrounded)
+        {
+            if (Input.GetKeyDown(KeyCode.UpArrow))
+            {
+                Jump();
+             }
+        }*/
 
         if (Input.GetKeyDown(KeyCode.UpArrow))
         {
@@ -72,10 +84,17 @@ public class PlayerController : MonoBehaviour //done by Miranda Ly
     private void FixedUpdate()
     {
         controller.Move(direction * Time.fixedDeltaTime);
+        //Vector3 forwardMove = transform.forward * speed * Time.fixedDeltaTime;
+        //rb.MovePosition(rb.position + forwardMove);
     }
 
     private void Jump()
     {
         direction.y = jumpForce;
+        //float height = GetComponent<Collider>().bounds.size.y;
+        //bool isGrounded = Physics.Raycast(transform.position, Vector3.down, (height / 2) + 0.1f, groundMask);
+        
+        //rb.MovePosition 
+        
     }
 }
