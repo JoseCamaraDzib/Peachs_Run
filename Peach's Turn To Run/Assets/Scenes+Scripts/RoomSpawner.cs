@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class RoomSpawner : MonoBehaviour
 {
-    /*public GameObject[] roomTile;
+    public GameObject[] roomTile;
     public int zPos = 52;
     public bool creatingRoomTile = false;
     public int roomNum;
@@ -25,9 +25,9 @@ public class RoomSpawner : MonoBehaviour
         zPos += 52;
         yield return new WaitForSeconds(3);
         creatingRoomTile = false;
-    }*/
+    }
 
-    public GameObject[] roomTile;
+    /*public GameObject[] roomTile;
     public float zSpawn = 0;
     public float roomLength = 52;
 
@@ -41,6 +41,5 @@ public class RoomSpawner : MonoBehaviour
     {
         Instantiate(roomTile[roomIndex], transform.forward * zSpawn, transform.rotation);
         zSpawn += roomLength;
-    }
-
+    }*/
 }
