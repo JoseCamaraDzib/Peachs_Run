@@ -5,7 +5,7 @@ using UnityEngine;
 public class RoomSpawner : MonoBehaviour
 {
     public GameObject[] roomTile;
-    public int zPos = 52;
+    [SerializeField]public int zPos;
     public bool creatingRoomTile = false;
     public int roomNum;
 
@@ -22,7 +22,7 @@ public class RoomSpawner : MonoBehaviour
     {
         roomNum = Random.Range(0, 3);
         Instantiate(roomTile[roomNum], new Vector3(0, 0, zPos), Quaternion.identity);
-        zPos += 52;
+        zPos += 103;
         yield return new WaitForSeconds(3);
         creatingRoomTile = false;
     }

@@ -4822,7 +4822,7 @@ MonoBehaviour:
   - {fileID: 904204601}
   - {fileID: 5697770033059685032}
   - {fileID: 5697770033848330169}
-  zPos: 52
+  zPos: 104
   creatingRoomTile: 0
   roomNum: 0
 --- !u!114 &1844476914
@@ -7866,7 +7866,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &2391520393803315153
 GameObject:
   m_ObjectHideFlags: 0
@@ -13984,7 +13984,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &7882139138596259826
 Transform:
   m_ObjectHideFlags: 0
@@ -14385,7 +14385,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &8213522071404798102
 MonoBehaviour:
   m_ObjectHideFlags: 0
