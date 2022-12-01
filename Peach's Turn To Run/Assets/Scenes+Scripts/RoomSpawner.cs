@@ -1,20 +1,46 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class RoomSpawner : MonoBehaviour
 {
-    public GameObject roomTile;
-    Vector3 nextSpawnPoint;
+    /*public GameObject[] roomTile;
+    public int zPos = 52;
+    public bool creatingRoomTile = false;
+    public int roomNum;
 
-    public void SpawnTile()
+    void Update()
     {
-        GameObject temp = Instantiate(roomTile, nextSpawnPoint, Quaternion.identity);
-        nextSpawnPoint = temp.transform.GetChild(4).transform.position;
-    }
-    void Start()
-    {
-        for (int i = 0; i < 15; i++)
+        if (creatingRoomTile == false)
         {
-            SpawnTile();
+            creatingRoomTile = true;
+            StartCoroutine(GenerateSection());
         }
     }
+
+    IEnumerator GenerateSection()
+    {
+        roomNum = Random.Range(0, 3);
+        Instantiate(roomTile[roomNum], new Vector3(0, 0, zPos), Quaternion.identity);
+        zPos += 52;
+        yield return new WaitForSeconds(3);
+        creatingRoomTile = false;
+    }*/
+
+    public GameObject[] roomTile;
+    public float zSpawn = 0;
+    public float roomLength = 52;
+
+    private void Start()
+    {
+        SpawnTile(0);
+        SpawnTile(1);
+        SpawnTile(2);
+    }
+    public void SpawnTile(int roomIndex)
+    {
+        Instantiate(roomTile[roomIndex], transform.forward * zSpawn, transform.rotation);
+        zSpawn += roomLength;
+    }
+
 }
