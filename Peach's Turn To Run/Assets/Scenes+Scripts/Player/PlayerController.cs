@@ -5,10 +5,10 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     [SerializeField] 
-    public float moveSpeed = 15;
+    public float moveSpeed;
 
     [SerializeField]
-    public float leftRightSpeed = 8;
+    public float leftRightSpeed;
 
     private void Update()
     {
