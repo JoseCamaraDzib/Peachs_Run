@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NewPlayerController : MonoBehaviour
+public class PlayerController : MonoBehaviour
 {
     /*[SerializeField] public float speed;
     public Rigidbody rb;
@@ -40,7 +40,12 @@ public class NewPlayerController : MonoBehaviour
             if (this.gameObject.transform.position.x < LevelBoundary.rightSide)
             {
                 transform.Translate(Vector3.left * Time.deltaTime * leftRightSpeed * -1);
-            }          
+            }
         }
+    }
+
+    public void IncreaseSpeed(float force)
+    {
+        moveSpeed += force;
     }
 }
