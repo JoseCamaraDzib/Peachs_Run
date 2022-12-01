@@ -22,7 +22,7 @@ public class RoomSpawner : MonoBehaviour
     {
         roomNum = Random.Range(0, 3);
         Instantiate(roomTile[roomNum], new Vector3(0, 0, zPos), Quaternion.identity);
-        zPos += 103;
+        zPos += 90;
         yield return new WaitForSeconds(3);
         creatingRoomTile = false;
     }

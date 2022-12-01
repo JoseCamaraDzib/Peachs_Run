@@ -5,6 +5,7 @@ using UnityEngine;
 public class EndRunSequence : MonoBehaviour
 {
     public GameObject endScreen;
+    public bool alive = true;
     void Start()
     {
         StartCoroutine(EndSequence());
@@ -12,7 +13,7 @@ public class EndRunSequence : MonoBehaviour
 
    IEnumerator EndSequence()
     {
-        yield return new WaitForSeconds(3);
+        yield return new WaitUntil(() => alive = false);
         endScreen.SetActive(true);
     }
 }
