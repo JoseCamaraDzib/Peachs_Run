@@ -4768,6 +4768,7 @@ GameObject:
   - component: {fileID: 1844476911}
   - component: {fileID: 1844476912}
   - component: {fileID: 1844476913}
+  - component: {fileID: 1844476914}
   m_Layer: 0
   m_Name: LevelControl
   m_TagString: Untagged
@@ -4824,6 +4825,19 @@ MonoBehaviour:
   zPos: 52
   creatingRoomTile: 0
   roomNum: 0
+--- !u!114 &1844476914
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1844476910}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e98ba554194cbe478961ba4624069fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  endScreen: {fileID: 1116715094}
 --- !u!1 &1935216643
 GameObject:
   m_ObjectHideFlags: 0
