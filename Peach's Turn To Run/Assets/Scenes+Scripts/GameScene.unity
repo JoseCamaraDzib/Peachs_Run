@@ -7184,6 +7184,7 @@ GameObject:
   - component: {fileID: 6590767978399917234}
   - component: {fileID: 1584391291022106462}
   - component: {fileID: 6590767978399917235}
+  - component: {fileID: 6590767978399917236}
   m_Layer: 0
   m_Name: Barrel
   m_TagString: Untagged
@@ -9612,6 +9613,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thePlayer: {fileID: 1688304314}
   crash: {fileID: 8249136}
+  levelControl: {fileID: 1844476910}
 --- !u!65 &4075758405855914441
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9672,6 +9674,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thePlayer: {fileID: 1688304314}
   crash: {fileID: 8249136}
+  levelControl: {fileID: 1844476910}
 --- !u!65 &4075758406411369568
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9719,6 +9722,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thePlayer: {fileID: 1688304314}
   crash: {fileID: 8249136}
+  levelControl: {fileID: 1844476910}
 --- !u!65 &4075758406827744512
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9767,6 +9771,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thePlayer: {fileID: 1688304314}
   crash: {fileID: 8249136}
+  levelControl: {fileID: 1844476910}
 --- !u!65 &4075758406827744517
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9827,6 +9832,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thePlayer: {fileID: 1688304314}
   crash: {fileID: 8249136}
+  levelControl: {fileID: 1844476910}
 --- !u!33 &4118686951278321916
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -12578,6 +12584,21 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.299627, y: 1.5000002, z: 1.2996271}
   m_Center: {x: -0.00000071525574, y: 0.7497269, z: -0.00000014901161}
+--- !u!114 &6590767978399917236
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1584391291022106463}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ce3ab0f5db48534aa8c73199142f78e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  thePlayer: {fileID: 1688304314}
+  crash: {fileID: 8249136}
+  levelControl: {fileID: 1844476910}
 --- !u!23 &6590767978462862317
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -12634,6 +12655,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thePlayer: {fileID: 1688304314}
   crash: {fileID: 8249136}
+  levelControl: {fileID: 1844476910}
 --- !u!65 &6590767978462862319
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12703,6 +12725,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thePlayer: {fileID: 1688304314}
   crash: {fileID: 8249136}
+  levelControl: {fileID: 1844476910}
 --- !u!65 &6590767979683703509
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12772,6 +12795,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thePlayer: {fileID: 1688304314}
   crash: {fileID: 8249136}
+  levelControl: {fileID: 1844476910}
 --- !u!65 &6590767979710912925
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13370,6 +13394,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thePlayer: {fileID: 1688304314}
   crash: {fileID: 8249136}
+  levelControl: {fileID: 1844476910}
 --- !u!65 &7290526561842381115
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14375,6 +14400,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thePlayer: {fileID: 1688304314}
   crash: {fileID: 8249136}
+  levelControl: {fileID: 1844476910}
 --- !u!65 &8215510844507849255
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14483,6 +14509,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thePlayer: {fileID: 1688304314}
   crash: {fileID: 8249136}
+  levelControl: {fileID: 1844476910}
 --- !u!33 &8415434534244131845
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -14505,6 +14532,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thePlayer: {fileID: 1688304314}
   crash: {fileID: 8249136}
+  levelControl: {fileID: 1844476910}
 --- !u!65 &8415434534244131847
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14540,6 +14568,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thePlayer: {fileID: 1688304314}
   crash: {fileID: 8249136}
+  levelControl: {fileID: 1844476910}
 --- !u!33 &8415434535279825738
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -14562,6 +14591,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thePlayer: {fileID: 1688304314}
   crash: {fileID: 8249136}
+  levelControl: {fileID: 1844476910}
 --- !u!65 &8423736830769394353
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14736,6 +14766,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thePlayer: {fileID: 1688304314}
   crash: {fileID: 8249136}
+  levelControl: {fileID: 1844476910}
 --- !u!65 &8562292182798294456
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14908,6 +14939,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thePlayer: {fileID: 1688304314}
   crash: {fileID: 8249136}
+  levelControl: {fileID: 1844476910}
 --- !u!65 &9034519230244217253
 BoxCollider:
   m_ObjectHideFlags: 0
