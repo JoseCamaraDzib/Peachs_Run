@@ -15,13 +15,10 @@ public class GameOverScreen : MonoBehaviour
     [SerializeField]
     private PlayerController PC;
 
-    // Update is called once per frame
-    void Update()
+
+    public void EndGame()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            gameOverUI.SetActive(true);
-        }
+        gameOverUI.SetActive(true);
     }
 
     public void Menu()

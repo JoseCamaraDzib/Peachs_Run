@@ -4,16 +4,17 @@ using UnityEngine;
 
 public class EndRunSequence : MonoBehaviour
 {
-    public GameObject endScreen;
+    public GameOverScreen endScreen;
     public bool alive = true;
-    void Start()
+
+    public void Start()
     {
         StartCoroutine(EndSequence());
     }
 
    IEnumerator EndSequence()
     {
-        yield return new WaitUntil(() => alive = false);
-        endScreen.SetActive(true);
+        yield return new WaitForSeconds(3);
+        endScreen.EndGame();
     }
 }

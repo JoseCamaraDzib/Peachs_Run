@@ -6759,12 +6759,12 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1844476910}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7e98ba554194cbe478961ba4624069fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  endScreen: {fileID: 0}
+  endScreen: {fileID: 702578753}
   alive: 1
 --- !u!1 &1881087307
 GameObject:
@@ -10024,7 +10024,7 @@ GameObject:
   - component: {fileID: 6590767978462862318}
   m_Layer: 0
   m_Name: Barrel
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12429,7 +12429,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thePlayer: {fileID: 1688304314}
   crash: {fileID: 8249136}
-  levelControl: {fileID: 1844476910}
+  main: {fileID: 0}
+  gameOver: {fileID: 0}
+  levelControl: {fileID: 0}
 --- !u!65 &4075758405855914441
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12471,7 +12473,7 @@ GameObject:
   - component: {fileID: 4075758405941224724}
   m_Layer: 0
   m_Name: Crate (1)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12490,6 +12492,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thePlayer: {fileID: 1688304314}
   crash: {fileID: 8249136}
+  main: {fileID: 211484254}
+  gameOver: {fileID: 702578753}
   levelControl: {fileID: 1844476910}
 --- !u!65 &4075758406411369568
 BoxCollider:
@@ -12538,7 +12542,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thePlayer: {fileID: 1688304314}
   crash: {fileID: 8249136}
-  levelControl: {fileID: 1844476910}
+  main: {fileID: 0}
+  gameOver: {fileID: 0}
+  levelControl: {fileID: 0}
 --- !u!65 &4075758406827744512
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12587,7 +12593,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thePlayer: {fileID: 1688304314}
   crash: {fileID: 8249136}
-  levelControl: {fileID: 1844476910}
+  main: {fileID: 0}
+  gameOver: {fileID: 0}
+  levelControl: {fileID: 0}
 --- !u!65 &4075758406827744517
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12616,7 +12624,7 @@ GameObject:
   - component: {fileID: 4075758407222173060}
   m_Layer: 0
   m_Name: Crate
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12648,6 +12656,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thePlayer: {fileID: 1688304314}
   crash: {fileID: 8249136}
+  main: {fileID: 211484254}
+  gameOver: {fileID: 702578753}
   levelControl: {fileID: 1844476910}
 --- !u!33 &4118686951278321916
 MeshFilter:
@@ -15414,7 +15424,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thePlayer: {fileID: 1688304314}
   crash: {fileID: 8249136}
-  levelControl: {fileID: 1844476910}
+  main: {fileID: 0}
+  gameOver: {fileID: 0}
+  levelControl: {fileID: 0}
 --- !u!23 &6590767978462862317
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -15471,6 +15483,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thePlayer: {fileID: 1688304314}
   crash: {fileID: 8249136}
+  main: {fileID: 211484254}
+  gameOver: {fileID: 702578753}
   levelControl: {fileID: 1844476910}
 --- !u!65 &6590767978462862319
 BoxCollider:
@@ -15541,7 +15555,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thePlayer: {fileID: 1688304314}
   crash: {fileID: 8249136}
-  levelControl: {fileID: 1844476910}
+  main: {fileID: 0}
+  gameOver: {fileID: 0}
+  levelControl: {fileID: 0}
 --- !u!65 &6590767979683703509
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -15611,7 +15627,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thePlayer: {fileID: 1688304314}
   crash: {fileID: 8249136}
-  levelControl: {fileID: 1844476910}
+  main: {fileID: 0}
+  gameOver: {fileID: 0}
+  levelControl: {fileID: 0}
 --- !u!65 &6590767979710912925
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16210,7 +16228,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thePlayer: {fileID: 1688304314}
   crash: {fileID: 8249136}
-  levelControl: {fileID: 1844476910}
+  main: {fileID: 0}
+  gameOver: {fileID: 0}
+  levelControl: {fileID: 0}
 --- !u!65 &7290526561842381115
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16583,7 +16603,7 @@ GameObject:
   - component: {fileID: 8415434534636714559}
   m_Layer: 0
   m_Name: Barrel_Stack
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17216,7 +17236,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thePlayer: {fileID: 1688304314}
   crash: {fileID: 8249136}
-  levelControl: {fileID: 1844476910}
+  main: {fileID: 0}
+  gameOver: {fileID: 0}
+  levelControl: {fileID: 0}
 --- !u!65 &8215510844507849255
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -17325,7 +17347,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thePlayer: {fileID: 1688304314}
   crash: {fileID: 8249136}
-  levelControl: {fileID: 1844476910}
+  main: {fileID: 0}
+  gameOver: {fileID: 0}
+  levelControl: {fileID: 0}
 --- !u!33 &8415434534244131845
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -17348,7 +17372,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thePlayer: {fileID: 1688304314}
   crash: {fileID: 8249136}
-  levelControl: {fileID: 1844476910}
+  main: {fileID: 0}
+  gameOver: {fileID: 0}
+  levelControl: {fileID: 0}
 --- !u!65 &8415434534244131847
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -17384,6 +17410,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thePlayer: {fileID: 1688304314}
   crash: {fileID: 8249136}
+  main: {fileID: 211484254}
+  gameOver: {fileID: 702578753}
   levelControl: {fileID: 1844476910}
 --- !u!33 &8415434535279825738
 MeshFilter:
@@ -17407,7 +17435,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thePlayer: {fileID: 1688304314}
   crash: {fileID: 8249136}
-  levelControl: {fileID: 1844476910}
+  main: {fileID: 0}
+  gameOver: {fileID: 0}
+  levelControl: {fileID: 0}
 --- !u!65 &8423736830769394353
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -17582,7 +17612,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thePlayer: {fileID: 1688304314}
   crash: {fileID: 8249136}
-  levelControl: {fileID: 1844476910}
+  main: {fileID: 0}
+  gameOver: {fileID: 0}
+  levelControl: {fileID: 0}
 --- !u!65 &8562292182798294456
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -17755,7 +17787,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thePlayer: {fileID: 1688304314}
   crash: {fileID: 8249136}
-  levelControl: {fileID: 1844476910}
+  main: {fileID: 0}
+  gameOver: {fileID: 0}
+  levelControl: {fileID: 0}
 --- !u!65 &9034519230244217253
 BoxCollider:
   m_ObjectHideFlags: 0
