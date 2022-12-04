@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PowerUpSpeed : PowerUpBase
 {
+    //Coded by José Cámara Dzib
     [SerializeField]
     private float speedBoost;
 
@@ -20,7 +21,6 @@ public class PowerUpSpeed : PowerUpBase
         m_Player.IncreaseSpeed(speedBoost);
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (Time.time - startTime > boostTime)

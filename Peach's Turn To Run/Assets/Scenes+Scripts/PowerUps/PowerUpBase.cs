@@ -4,12 +4,13 @@ using UnityEngine;
 
 public abstract class PowerUpBase : MonoBehaviour
 {
+    //Coded by José Cámara Dzib
     [SerializeField]
-    public PowerUpPickup inWorldPickUp;
+    private PowerUpPickup pickUpPrefab;
 
-    void Start()
+    public void Start()
     {
-        PowerUpPickup instance = Instantiate(inWorldPickUp, transform);
+        PowerUpPickup instance = Instantiate(pickUpPrefab, transform);
         instance.Init(this);
     }
 

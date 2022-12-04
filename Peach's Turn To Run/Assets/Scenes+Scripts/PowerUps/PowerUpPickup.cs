@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PowerUpPickup : MonoBehaviour
 {
+    //Coded by José Cámara Dzib
     private PowerUpBase powerUp;
 
     public void Init(PowerUpBase power)
