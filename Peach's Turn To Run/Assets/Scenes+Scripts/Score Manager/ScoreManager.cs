@@ -14,6 +14,14 @@ public class ScoreManager : MonoBehaviour
 
     public bool scoreinc;
 
+    void Start()
+    {
+        if(PlayerPrefs.GetFloat("High Score") != null)
+        {
+            highScoreCount = PlayerPrefs.GetFloat("High Score");
+        }
+    }
+
     // Update is called once per frame
     void Update()
     { 
@@ -25,6 +33,7 @@ public class ScoreManager : MonoBehaviour
         if(scoreCount > highScoreCount)
         {
             highScoreCount = scoreCount;
+            PlayerPrefs.SetFloat("High Score", highScoreCount);
         }
         scoreText.text = "Score: " + Mathf.Round(scoreCount);
         highScoreText.text = "High Score: " + Mathf.Round(highScoreCount);
