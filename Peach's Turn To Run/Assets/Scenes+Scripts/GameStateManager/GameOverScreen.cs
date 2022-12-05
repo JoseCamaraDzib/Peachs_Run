@@ -10,6 +10,8 @@ public class GameOverScreen : MonoBehaviour
 
     public GameObject gameOverUI;
 
+    private ScoreManager ScoreManager;
+
     [SerializeField]
     private GameManager GM;
 
@@ -29,6 +31,10 @@ public class GameOverScreen : MonoBehaviour
 
     public void Restart()
     {
+        ScoreManager.scoreinc = false;
         GM.PlayGame();
+
+        ScoreManager.scoreCount = 0;
+        ScoreManager.scoreinc = true;
     }
 }
