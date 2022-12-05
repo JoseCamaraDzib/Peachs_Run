@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-    //Coded by José Cámara Dzib
+    //Coded by Jose Camara Dzib
     public void PlayGame()
     {
         SceneManager.LoadScene(2);

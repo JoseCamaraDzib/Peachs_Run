@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PowerUpSpeed : PowerUpBase
 {
-    //Coded by José Cámara Dzib
+    //Coded by Jose Camara Dzib
     [SerializeField]
     private float speedBoost;
 
@@ -12,20 +12,21 @@ public class PowerUpSpeed : PowerUpBase
     private float boostTime;
 
     private float startTime;
-    private PlayerController m_Player;
+    private PlayerController thePlayer;
 
     public override void Apply(PlayerController player)
     {
         startTime = Time.time;
-        m_Player = player;
-        m_Player.IncreaseSpeed(speedBoost);
+        thePlayer = player;
+        thePlayer.IncreaseSpeed(speedBoost);
     }
 
+    //Removes ability after duration
     void Update()
     {
         if (Time.time - startTime > boostTime)
         {
-            m_Player.IncreaseSpeed(-speedBoost);
+            thePlayer.IncreaseSpeed(-speedBoost);
             Destroy(gameObject);
         }
     }

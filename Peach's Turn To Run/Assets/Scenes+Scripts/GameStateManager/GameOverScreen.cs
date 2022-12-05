@@ -5,12 +5,13 @@ using UnityEngine.SceneManagement;
 
 public class GameOverScreen : MonoBehaviour
 {
-    //Coded by José Cámara Dzib
+    //Coded by Jose Camara Dzib
     public static bool GameIsOver = false;
 
     public GameObject gameOverUI;
 
-    private ScoreManager ScoreManager;
+    [SerializeField]
+    private ScoreManager SM;
 
     [SerializeField]
     private GameManager GM;
@@ -31,10 +32,10 @@ public class GameOverScreen : MonoBehaviour
 
     public void Restart()
     {
-        ScoreManager.scoreinc = false;
+        SM.scoreinc = false;
         GM.PlayGame();
 
-        ScoreManager.scoreCount = 0;
-        ScoreManager.scoreinc = true;
+        SM.scoreCount = 0;
+        SM.scoreinc = true;
     }
 }

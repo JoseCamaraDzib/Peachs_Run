@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerController : MonoBehaviour
+public class PlayerController : MonoBehaviour //coded by Miranda Ly
 {
     [SerializeField] 
     public float moveSpeed;
@@ -33,6 +33,7 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    //coded by Jose Camara Dzib
     public void IncreaseSpeed(float force)
     {
         moveSpeed += force;

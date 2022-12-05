@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PowerUpSpawner : MonoBehaviour
 {
-    //Coded by José Cámara Dzib
+    //Coded by Jose Camara Dzib
     public GameObject powerUp;
     public int xPos;
     public int zPos;
@@ -20,6 +20,7 @@ public class PowerUpSpawner : MonoBehaviour
         }
     }
 
+    //At same pace as chunk spawning
     IEnumerator GeneratePowerUp()
     {
         yield return new WaitForSeconds(30);

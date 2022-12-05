@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LevelBoundary : MonoBehaviour
+public class LevelBoundary : MonoBehaviour //coded by Miranda Ly
 {
     public static float leftSide = -12f;
     public static float rightSide = 12f;

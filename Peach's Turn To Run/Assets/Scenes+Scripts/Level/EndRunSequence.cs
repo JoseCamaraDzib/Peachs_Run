@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class EndRunSequence : MonoBehaviour
 {
-    //Coded by Miranda Ly and José Cámara Dzib
+    //Coded by Miranda Ly and Jose Camara Dzib
     public GameOverScreen endScreen;
     public bool alive = true;
 
@@ -13,7 +13,8 @@ public class EndRunSequence : MonoBehaviour
         StartCoroutine(EndSequence());
     }
 
-   IEnumerator EndSequence()
+    //Slight delay for impact music
+    IEnumerator EndSequence()
     {
         yield return new WaitForSeconds(3);
         endScreen.EndGame();

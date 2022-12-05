@@ -4,7 +4,7 @@ using UnityEngine;
 
 public abstract class PowerUpBase : MonoBehaviour
 {
-    //Coded by José Cámara Dzib
+    //Coded by Jose Camara Dzib
     [SerializeField]
     private PowerUpPickup pickUpPrefab;
 
