@@ -23,11 +23,11 @@ public class PowerUpSpawner : MonoBehaviour
     //At same pace as chunk spawning
     IEnumerator GeneratePowerUp()
     {
-        yield return new WaitForSeconds(30);
         xPos = Random.Range(-10, 10);
         zPos = Random.Range(-150, 150);
         Instantiate(powerUp, new Vector3(xPos, -2, (zDist + zPos)), Quaternion.identity);
         zDist += 500;
+        yield return new WaitForSeconds(30);
         creatingPowerUp = false;
     }
 }
