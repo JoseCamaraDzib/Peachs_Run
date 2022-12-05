@@ -9,9 +9,7 @@ public class GameOverScreen : MonoBehaviour
     public static bool GameIsOver = false;
 
     public GameObject gameOverUI;
-
-    [SerializeField]
-    private ScoreManager SM;
+    public GameObject scoreUI;
 
     [SerializeField]
     private GameManager GM;
@@ -23,6 +21,7 @@ public class GameOverScreen : MonoBehaviour
     public void EndGame()
     {
         gameOverUI.SetActive(true);
+        scoreUI.SetActive(false);
     }
 
     public void Menu()
@@ -32,10 +31,6 @@ public class GameOverScreen : MonoBehaviour
 
     public void Restart()
     {
-        SM.scoreinc = false;
         GM.PlayGame();
-
-        SM.scoreCount = 0;
-        SM.scoreinc = true;
     }
 }
